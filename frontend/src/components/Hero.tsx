@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import BubbleEffect from './BubbleEffect';
 import OceanWaves from './OceanWaves'; // Keeping OceanWaves
-// import Sand from './Sand'; // Removing the Sand component import
-// import SeaPlants from './SeaPlants'; // Removing SeaPlants
+import plantImage from '/plant.png';
+import sandImage from '/sand.png';
 
 const Hero = () => {
   return (
@@ -13,16 +13,16 @@ const Hero = () => {
       
       {/* Sand Image */}
       <img
-        src="/public/lovable-uploads/sand.png"
+        src={sandImage}
         alt="Sand"
-        className="absolute bottom-0 right-0 w-[600px] h-[400px] z-1 object-cover"
+        className="absolute bottom-0 right-0 w-[2200px] h-[850px] z-1 object-cover"
       />
 
       {/* Plant Image */}
       <img
-        src="/public/lovable-uploads/plant.png"
+        src={plantImage}
         alt="Sea Plant"
-        className="absolute bottom-0 right-10 h-40 z-2"
+        className="absolute bottom-0 right-5 h-80 z-2"
       />
 
       {/* Bubbles Animation */}
@@ -31,7 +31,7 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 md:px-8 py-16 flex flex-col md:flex-row items-center justify-between flex-1 z-10 relative">
         {/* Left content */}
-        <div className="w-full md:w-1/2 text-white animate-fade-in" style={{ animationDelay: '0.3s' }}>
+        <div className="w-full md:w-1/2 text-white animate-fade-in animate-delay-03s">
           {/* Removed items-center from h1 for left alignment */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 flex flex-col gap-4">
             <span>
